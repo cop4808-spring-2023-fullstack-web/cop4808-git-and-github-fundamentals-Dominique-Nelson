@@ -1,3 +1,7 @@
+Dominique Nelson
+COP 4808
+Homework 1
+1/28/2023
 # :wave: The Basics of GitHub 
 
 ## 🤓 Course overview and learning outcomes 
