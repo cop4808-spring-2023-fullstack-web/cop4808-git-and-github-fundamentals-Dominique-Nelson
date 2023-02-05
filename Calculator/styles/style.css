@@ -52,9 +52,22 @@ button {
 #zero {
     grid-column: span 2;
 }
-/*added a background color to all 4 of my new buttons*/
+/*created one class for all 4 buttons to use*/
+.newbutton{
+    background-color: #33b9bb;
+}
+
+.newbutton:active{
+    background-color: rgb(123, 189, 255);
+
+}
+/* first color change I made before putting them all under one class
 .del{
     background-color: #a52a2a;
+}
+
+.del:active {
+    background-color: #33b9bb;
 }
 
 .sqrt {
@@ -67,7 +80,8 @@ button {
 
 .close{
     background-color: #a52a2a;
-}
+} */
+
 .operator {
     background-color: #FF8F1F;    
 }

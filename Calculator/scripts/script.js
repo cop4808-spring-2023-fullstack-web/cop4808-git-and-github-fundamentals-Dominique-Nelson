@@ -8,6 +8,7 @@ const buttons = document.querySelectorAll('button');
 
 window.addEventListener('keydown', function(e){
     const key = document.querySelector(`button[data-key='${e.keyCode}']`);
+    console.log('keypress = ${e.keyCode}')
     key.click();
 });
 
@@ -41,12 +42,21 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('clear'))
+            } else if(buttons[i].classList.contains('clear')){
                 clearDisplay();
                 updateDisplay();
+                //added the square root button to the For loop
+            } else if(buttons[i].classList.contains('sqrt'))
+            sqrt(displayValue);
+            updateDisplay();
+
+
         }
     )}
+  
 }
+
+
 
 clickButton();
 
@@ -183,6 +193,10 @@ function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
 
-function del() {
-    outputScreen.value = outputScreen.value.slice(0,-1);
+function sqrt(num){
+   return displayValue = Math.sqrt(num).toString();
 }
+
+/*function del() {
+    outputScreen.value = outputScreen.value.slice(0,-1);
+} */
