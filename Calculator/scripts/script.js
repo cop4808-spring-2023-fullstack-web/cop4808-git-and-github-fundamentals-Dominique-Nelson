@@ -46,9 +46,20 @@ function clickButton() {
                 clearDisplay();
                 updateDisplay();
                 //added the square root button to the For loop
-            } else if(buttons[i].classList.contains('sqrt'))
-            sqrt(displayValue);
-            updateDisplay();
+            } else if(buttons[i].classList.contains('sqrt')){
+                sqrt(displayValue);
+                updateDisplay();
+                //added the rest of the new buttons
+            } else if(buttons[i].classList.contains('del')){
+                del(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('power')){
+                power(displayValue);
+                updateDisplay(displayValue);
+            } else if(buttons[i].classList.contains('pi'))
+            pi(displayValue);
+            updateDisplay(displayValue);
+             
 
 
         }
@@ -196,7 +207,14 @@ function roundAccurately(num, places) {
 function sqrt(num){
    return displayValue = Math.sqrt(num).toString();
 }
+//working functions for the delete, squared, and Pi buttons
+function del() {
+    displayValue = displayValue.slice(0,-1);
+} 
 
-/*function del() {
-    outputScreen.value = outputScreen.value.slice(0,-1);
-} */
+function power() {
+    return displayValue = Math.pow(displayValue, 2);
+}
+function pi(){
+    return displayValue = Math.PI.toString();
+}
