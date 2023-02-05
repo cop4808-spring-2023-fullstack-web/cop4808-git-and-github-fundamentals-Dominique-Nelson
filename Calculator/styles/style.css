@@ -20,7 +20,7 @@ html {
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(6, 80px);
     gap: 2px;
 }
 
@@ -52,7 +52,22 @@ button {
 #zero {
     grid-column: span 2;
 }
+/*added a background color to all 4 of my new buttons*/
+.del{
+    background-color: #a52a2a;
+}
 
+.sqrt {
+    background-color: #a52a2a;
+}
+
+.open{
+    background-color: #a52a2a;
+}
+
+.close{
+    background-color: #a52a2a;
+}
 .operator {
     background-color: #FF8F1F;    
 }

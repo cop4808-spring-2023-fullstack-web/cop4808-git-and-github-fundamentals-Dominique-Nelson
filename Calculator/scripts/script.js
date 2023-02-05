@@ -182,3 +182,7 @@ function operate(x, y, op) {
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
+
+function del() {
+    outputScreen.value = outputScreen.value.slice(0,-1);
+}
